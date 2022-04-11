@@ -1,0 +1,2 @@
+# TrailQuest Sample Project Templates
+

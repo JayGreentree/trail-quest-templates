@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrailQuest Running</title>
+  </head>
+  <body>
+    <div class="relative bg-primary">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div
+          class="flex justify-between items-center py-6 md:justify-start md:space-x-10"
+        >
+          <div class="flex justify-start lg:w-0 lg:flex-1 text-white">
+            <div class="text-center">
+              <a href="#">
+                <img
+                  src="/images/logo.svg"
+                  class="h-16 w-auto hover:opacity-50"
+                  alt="TrailQuest"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="-mr-2 -my-2 md:hidden">
+            <button
+              type="button"
+              class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open menu</span>
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+          <nav class="hidden md:flex space-x-10">
+            <a
+              href="#"
+              class="text-base font-medium text-gray-300 hover:text-secondary"
+            >
+              Adventures
+            </a>
+            <a
+              href="#"
+              class="text-base font-medium text-gray-300 hover:text-secondary"
+            >
+              Locations
+            </a>
+            <a
+              href="#"
+              class="text-base font-medium text-gray-300 hover:text-secondary"
+            >
+              FAQs
+            </a>
+            <a
+              href="#"
+              class="text-base font-medium text-gray-300 hover:text-secondary"
+            >
+              About
+            </a>
+            <a
+              href="#"
+              class="text-base font-medium text-gray-300 hover:text-secondary"
+            >
+              Contact
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <!--
+    Mobile menu, show/hide based on mobile menu state.
+
+    Entering: "duration-200 ease-out"
+      From: "opacity-0 scale-95"
+      To: "opacity-100 scale-100"
+    Leaving: "duration-100 ease-in"
+      From: "opacity-100 scale-100"
+      To: "opacity-0 scale-95"
+  -->
+      <div
+        class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right hidden"
+      >
+        <div
+          class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50"
+        >
+          <div class="pt-5 pb-6 px-5">
+            <div class="flex items-center justify-between">
+              <div>TrailQuest</div>
+              <div class="-mr-2">
+                <button
+                  type="button"
+                  class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                >
+                  <span class="sr-only">Close menu</span>
+                  <!-- Heroicon name: outline/x -->
+                  <svg
+                    class="h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="mt-6">
+              <nav class="grid gap-y-8">
+                <a
+                  href="#"
+                  class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                >
+                  <svg
+                    class="flex-shrink-0 h-6 w-6 text-indigo-600"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                    />
+                  </svg>
+                  <span class="ml-3 text-base font-medium text-gray-900">
+                    Analytics
+                  </span>
+                </a>
+
+                <a
+                  href="#"
+                  class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                >
+                  <svg
+                    class="flex-shrink-0 h-6 w-6 text-indigo-600"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+                    />
+                  </svg>
+                  <span class="ml-3 text-base font-medium text-gray-900">
+                    Engagement
+                  </span>
+                </a>
+
+                <a
+                  href="#"
+                  class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                >
+                  <!-- Heroicon name: outline/shield-check -->
+                  <svg
+                    class="flex-shrink-0 h-6 w-6 text-indigo-600"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    />
+                  </svg>
+                  <span class="ml-3 text-base font-medium text-gray-900">
+                    Security
+                  </span>
+                </a>
+
+                <a
+                  href="#"
+                  class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                >
+                  <!-- Heroicon name: outline/view-grid -->
+                  <svg
+                    class="flex-shrink-0 h-6 w-6 text-indigo-600"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+                    />
+                  </svg>
+                  <span class="ml-3 text-base font-medium text-gray-900">
+                    Integrations
+                  </span>
+                </a>
+
+                <a
+                  href="#"
+                  class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                >
+                  <!-- Heroicon name: outline/refresh -->
+                  <svg
+                    class="flex-shrink-0 h-6 w-6 text-indigo-600"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                    />
+                  </svg>
+                  <span class="ml-3 text-base font-medium text-gray-900">
+                    Automations
+                  </span>
+                </a>
+              </nav>
+            </div>
+          </div>
+          <div class="py-6 px-5 space-y-6">
+            <div class="grid grid-cols-2 gap-y-4 gap-x-8">
+              <a
+                href="#"
+                class="text-base font-medium text-gray-900 hover:text-gray-700"
+              >
+                Pricing
+              </a>
+
+              <a
+                href="#"
+                class="text-base font-medium text-gray-900 hover:text-gray-700"
+              >
+                Docs
+              </a>
+
+              <a
+                href="#"
+                class="text-base font-medium text-gray-900 hover:text-gray-700"
+              >
+                Help Center
+              </a>
+
+              <a
+                href="#"
+                class="text-base font-medium text-gray-900 hover:text-gray-700"
+              >
+                Guides
+              </a>
+
+              <a
+                href="#"
+                class="text-base font-medium text-gray-900 hover:text-gray-700"
+              >
+                Events
+              </a>
+
+              <a
+                href="#"
+                class="text-base font-medium text-gray-900 hover:text-gray-700"
+              >
+                Security
+              </a>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+              >
+                Sign up
+              </a>
+              <p class="mt-6 text-center text-base font-medium text-gray-500">
+                Existing customer?
+                <a href="#" class="text-indigo-600 hover:text-indigo-500">
+                  Sign in
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+
+<div class="relative bg-white">
+    <div class="absolute inset-0">
+      <div class="absolute inset-y-0 left-0 w-1/2 bg-gray-50"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto lg:grid lg:grid-cols-5">
+      <div class="bg-secondary py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+        <div class="max-w-lg mx-auto">
+          <h2 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">Contact TrailQuest</h2>
+          <p class="mt-3 text-lg leading-6 text-gray-50">Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.</p>
+          <dl class="mt-8 text-base text-gray-50">
+            <div>
+              <dt class="sr-only">Postal address</dt>
+              <dd>
+                <p>1234 Road Blvd</p>
+                <p>Big City, TX USA</p>
+              </dd>
+            </div>
+            <div class="mt-6">
+              <dt class="sr-only">Phone number</dt>
+              <dd class="flex">
+                <span class=""> +1 (111) 867-5309 </span>
+              </dd>
+            </div>
+            <div class="mt-3">
+              <dt class="sr-only">Email</dt>
+              <dd class="flex">
+                <span class=""> inquiry@trailquest.com </span>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+      <div class="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+        <div class="max-w-lg mx-auto lg:max-w-none">
+            <div class="bg-gray-700 p-4 rounded-md mb-8 text-white">
+                <span>Thank you for your message! We received it and will reply as soon as possible.</span>
+            </div>
+          <form action="#" method="POST" class="grid grid-cols-1 gap-y-6">
+            <div>
+              <label for="full-name" class="sr-only">Full name</label>
+              <input type="text" name="full-name" id="full-name" autocomplete="name" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-secondary focus:border-primary border-secondary rounded-md" placeholder="Full name">
+            </div>
+            <div>
+              <label for="email" class="sr-only">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-primary focus:border-primary border-secondary rounded-md" placeholder="Email">
+            </div>
+            <div>
+              <label for="message" class="sr-only">Your Message</label>
+              <textarea id="message" name="message" rows="4" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-primary focus:border-primary border border-secondary rounded-md" placeholder="Your Message to TrailQuest"></textarea>
+            </div>
+            <div>
+              <button type="submit" class="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-primary hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+      <section class="overflow-hidden md:py-20 lg:py-20 bg-white">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="relative">
+            <blockquote class="">
+              <div
+                class="max-w-3xl mx-auto text-center text-4xl leading-9 font-bold text-secondary"
+              >
+                <p>
+                  &ldquo;The best way to spend my 5 days of annual vacation time
+                  away from the cubicle!&rdquo;
+                </p>
+              </div>
+              <footer class="mt-8">
+                <div class="md:flex md:items-center md:justify-center">
+                  <div
+                    class="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center"
+                  >
+                    <div class="text-base font-medium text-gray-900">
+                      Milton Waddams &nbsp;
+                    </div>
+                    <div class="text-base font-medium text-gray-500">
+                      Austin, TX
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-primary">
+      <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+        <nav
+          class="-mx-5 -my-2 flex flex-wrap justify-center"
+          aria-label="Footer"
+        >
+          <div class="px-5 py-2">
+            <a href="#" class="text-base text-gray-300 hover:text-secondary">
+              Trail Adventures
+            </a>
+          </div>
+
+          <div class="px-5 py-2">
+            <a href="#" class="text-base text-gray-300 hover:text-secondary">
+              Locations
+            </a>
+          </div>
+
+          <div class="px-5 py-2">
+            <a href="#" class="text-base text-gray-300 hover:text-secondary">
+              FAQs
+            </a>
+          </div>
+
+          <div class="px-5 py-2">
+            <a href="#" class="text-base text-gray-300 hover:text-secondary">
+              News
+            </a>
+          </div>
+        </nav>
+        <p class="mt-8 text-center text-base text-gray-400">
+          &copy; 2022 TrailQuests
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
